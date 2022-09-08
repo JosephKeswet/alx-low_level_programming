@@ -1,13 +1,15 @@
 #include <unistd.h>
 
 /**
- * main - Prints a text
- *
- * Return:Always 1 (Success)
+ * main - print a string to standard error
+ * Description: Using the main function
+ *This program prints to stderr
+ * Return: 0
  */
 int main(void)
 {
-	write (2,"and that piece of art is useful\"	-	Dora Korpar,	2015-10-19\n",59);	
+	char m[100] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	fprintf(stderr,"%s",m);	
 	return (1);
 
 }
