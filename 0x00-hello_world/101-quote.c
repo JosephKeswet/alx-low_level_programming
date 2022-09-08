@@ -1,7 +1,7 @@
 #include <unistd.h>
 
 /**
- * main - Entry point
+ * main - Prints a text
  *
  * Return:Always 1 (Success)
  */
