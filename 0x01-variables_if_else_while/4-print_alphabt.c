@@ -1,23 +1,26 @@
-
 #include <stdio.h>
-
 /**
- *main - prints alphabet
- *Description: Using the main function
- *This program prints to stderr
- *Return: 0
+ * main - Entry point
+ *
+ * Return: Always 0 (Success/correct)
  */
 int main(void)
-{	
-	char i;
 
-	for (i = 'a'; i <= 'z'; i++)
-	{
-		if (i != 'q' || i != 'e')
-			putchar(i);
-	}
+{
+char alphabet;
 
-	putchar('\n');
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+{
+	if (alphabet == 'q')
+		continue;
 
-	return (0);
+	else if (alphabet == 'e')
+		continue;
+
+	putchar(alphabet);
+}
+
+putchar('\n');
+
+return (0);
 }
