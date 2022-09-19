@@ -1,29 +1,20 @@
 #include "main.h"
-
 /**
- * print_square - prints squares
- * @size: parameter
- * Return: returns nothing
+ * print_square - Draws a diagonal line on the terminal
+ * @size: Long of the line
+ *
+ * Return: none
  */
-
 void print_square(int size)
 {
-	int x, y;
-	
-	if (size <= 0)
-	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (x = 0; x < size; x++)
-		{
-			for (y = 0; y < size; y++)
-			{
-				_putchar('#');
-			}
+int i, j;
 
-			_putchar('\n');
-		}
-	}
-}		
+for (i = 0; i < size; i++)
+{
+for (j = 0; j < size; j++)
+_putchar('#');
+_putchar('\n');
+}
+if (i == 0)
+_putchar('\n');
+}
