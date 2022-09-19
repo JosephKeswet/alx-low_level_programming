@@ -3,6 +3,7 @@
 * puts_half - a function that prints half of a string.
 * @str: character value
 */
+void _putchar();
 void puts_half(char *str)
 {
 int i, n;
