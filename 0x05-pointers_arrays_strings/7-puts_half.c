@@ -2,14 +2,13 @@
 #include <string.h>
 
 /**
-*  puts_half - prints half of a string
-* @str: input
+* puts_half -> puts half 
+* @str: string param
 * Return: half the input
 */
 void puts_half(char *str)
 {
     int x,y,i;
-
     x = strlen(str);
     if (x % 2 == 1)
     {
